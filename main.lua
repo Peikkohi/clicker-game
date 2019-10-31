@@ -82,6 +82,14 @@ function love.draw()
   )
 end
 
+function love.visible(visible)
+  if not visible then
+    local file = love.filesystem.newFile('score', 'w')
+    file:write(number.value)
+    file:close()
+  end
+end
+
 function love.quit()
   local file = love.filesystem.newFile('score', 'w')
   file:write(number.value)
