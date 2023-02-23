@@ -1,7 +1,8 @@
-# Clicker-game
-Made to practice making mobile games with love2d library
+# Clicker Game
+A [love2d](love2d.org) mobile game example.
 
 ## Installation
-1. Download the love2d app from playstore.
-2. Download the .love file from this repository.
-3. Run the .love file with love2d.
+1. Download the [love2d](love2d.org). 
+2. Download this repository as a `.zip`.
+3. Rename the downloaded zip to a `.love` file.
+4. Open the `.love` file with love2d.
