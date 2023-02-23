@@ -3,9 +3,9 @@ local number = {}
 local circle = {}
 
 function love.load(arg)
-	local font = love.graphics.setNewFont(--[['font.ttf',]] 32)
-	font:setFilter('nearest')
-
+	local font = love.filesystem.getInfo('font.otf') and
+		love.graphics.setNewFont('font.otf', 32) or
+		love.graphics.setNewFont(32)
 
 	local function get_score()
 		local msg, _ = love.filesystem.read('score')
